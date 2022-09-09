@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase - Auth</title>
+    <style>
+      .box {
+        background-color: gainsboro;
+        padding: 10px;
+        display: inline-block;
+        margin: 10px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
+      <button id="login">Login</button>
+      <button id="signup">Sign Up</button>
+      <button id="logout">Log Out</button>
+      <div id="loginMsg"></div>
+    </div>
+    <br />
+
+    <div class="box">
+      <button id="openRoute">Call Open Route</button>
+      <button id="authRoute">Call Auth Route</button>
+      <div id="routeMsg"></div>
+    </div>
+
+    <script src="./login.js" type="module"></script>
+  </body>
+</html>
